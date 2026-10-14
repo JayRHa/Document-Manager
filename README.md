@@ -1,83 +1,28 @@
 <!-- jr-brand:start -->
-<div align="center">
+<p align="center">
   <a href="https://jannikreinhard.com/">
-    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — Driving AI with passion" width="100%">
+    <img src="https://raw.githubusercontent.com/JayRHa/.github/main/assets/readme/brand-header.png" alt="Jannik Reinhard — I help enterprises ship secure AI agents" width="100%">
   </a>
-  <h1>Document Manager</h1>
-  <p><strong>Python-based document management tool for organizing, processing, and managing files.</strong></p>
-  <p>
-  <a href="https://jannikreinhard.com/"><img src="https://img.shields.io/badge/Website-146CDD?style=flat-square&amp;logo=wordpress&amp;logoColor=white" alt="Website"></a>
-  <a href="https://github.com/JayRHa"><img src="https://img.shields.io/badge/GitHub-081427?style=flat-square&amp;logo=github&amp;logoColor=white" alt="GitHub"></a>
-  <a href="https://www.linkedin.com/in/jannik-r/"><img src="https://img.shields.io/badge/LinkedIn-0795FF?style=flat-square&amp;logo=linkedin&amp;logoColor=white" alt="LinkedIn"></a>
-  <a href="https://x.com/jannik_reinhard"><img src="https://img.shields.io/badge/X-081427?style=flat-square&amp;logo=x&amp;logoColor=white" alt="X"></a>
-  <a href="https://www.youtube.com/@jannikreinhard"><img src="https://img.shields.io/badge/YouTube-146CDD?style=flat-square&amp;logo=youtube&amp;logoColor=white" alt="YouTube"></a>
-  </p>
-  <p><sub>Driving AI with passion · Microsoft Foundry · Intune · Azure</sub></p>
-</div>
+</p>
+<p align="center">
+  <a href="https://jannikreinhard.com/">Website</a> ·
+  <a href="https://www.linkedin.com/in/jannik-r/">LinkedIn</a> ·
+  <a href="https://x.com/jannik_reinhard">X</a> ·
+  <a href="https://www.youtube.com/@jannikreinhard">YouTube</a>
+</p>
 <!-- jr-brand:end -->
+
+# Document Manager
+
+**Type:** Tool or application · **Status:** Community project
+
+## Overview
+
+Python-based document management tool for organizing, processing, and managing files.
 
 > **Canonical repository:** This repository supersedes the legacy
 > `JayRHa/DocumentManagement` project and contains the maintained application,
 > runtime configuration, tests, and deployment path.
-
-## Features
-
-### AI-Powered Intelligence
-- **Semantic Search**: Find documents by meaning, not just keywords. Search for "payment terms" and find invoicing documents, contracts with payment clauses, and financial agreements - even if they never use those exact words
-- **Smart OCR**: Extract text from scanned PDFs, photos of whiteboards, and documents in 50+ languages using Tesseract OCR
-- **Auto-Tagging**: AI automatically categorizes documents based on content - financial reports get tagged as "finance", contracts as "legal", technical specs as "engineering"
-- **Natural Language Queries**: Just ask questions like "Show me all contracts expiring this year" or "What were our Q4 marketing expenses?"
-- **AI-Generated Summaries**: Understand large documents at a glance with automatic summary generation
-
-### Enterprise-Ready Security
-- **Role-Based Access Control**: Fine-grained permissions for users and groups
-- **Complete Audit Trails**: Track all document activities
-- **Privacy First**: Option to use Azure OpenAI to keep models in your own tenant
-- **Self-Hosted**: All data stays on your infrastructure - no vendor lock-in
-- **Session Management**: Secure session handling with automatic expiry
-
-### Modern Architecture
-- **RESTful API**: Complete OpenAPI 3.0 documented API built with FastAPI
-- **Vector Database**: ChromaDB for lightning-fast semantic search using embeddings
-- **Flexible AI**: Choose between OpenAI or Azure OpenAI (your choice)
-- **Simple Frontend**: Vanilla JavaScript keeping it simple and fast
-- **Docker-Ready**: Deploy in minutes with included setup script
-
-## Demo
-
-
-### Dashboard Overview
-![Dashboard](assets/dashboard-overview.png)
-*Clean, intuitive dashboard showing document statistics and recent activities*
-
-### AI-Powered Search
-![AI Search](assets/ai-search.jpeg)
-*Find documents by meaning, not just keywords - ask questions in natural language*
-
-### AI Chat
-![AI Chat](assets/ai-chat.png)
-*Interactive AI chat for document analysis and knowledge extraction*
-
-### Document Upload & Processing
-![Document Upload](assets/document-upload.jpeg)
-*Drag-and-drop interface with automatic text extraction and AI tagging*
-
-### Smart Tags & Organization
-![Tags Management](assets/tags.png)
-*AI auto-generates correspondents, document types, and tags - fully customizable with color coding*
-
-### Document Viewer
-![Document Viewer](assets/document-viewer.png)
-*Built-in document viewer with search highlighting and annotations*
-
-### User Management
-![User Management](assets/user-management.jpeg)
-*Enterprise-grade user and permission management*
-
-### Settings & Configuration
-![Settings](assets/settings-page.jpeg)
-*Easy configuration of AI providers and system settings*
-
 
 ## Quickstart
 
@@ -94,8 +39,8 @@ The beauty of open source? You can have this running on your machine right now:
 
 ```bash
 # Clone the repository
-git clone https://github.com/JayRHa/DocumentManager.git
-cd DocumentManager
+git clone https://github.com/JayRHa/document-manager.git
+cd document-manager
 
 # Build and run with a generated local .env file
 ./setup.sh build
@@ -191,6 +136,63 @@ pip install -r requirements.txt
 # Run development server
 uvicorn app.main:app --reload --host 127.0.0.1 --port 8000
 ```
+
+## Features
+
+### AI-Powered Intelligence
+- **Semantic Search**: Find documents by meaning, not just keywords. Search for "payment terms" and find invoicing documents, contracts with payment clauses, and financial agreements - even if they never use those exact words
+- **Smart OCR**: Extract text from scanned PDFs, photos of whiteboards, and documents in 50+ languages using Tesseract OCR
+- **Auto-Tagging**: AI automatically categorizes documents based on content - financial reports get tagged as "finance", contracts as "legal", technical specs as "engineering"
+- **Natural Language Queries**: Just ask questions like "Show me all contracts expiring this year" or "What were our Q4 marketing expenses?"
+- **AI-Generated Summaries**: Understand large documents at a glance with automatic summary generation
+
+### Enterprise-Ready Security
+- **Role-Based Access Control**: Fine-grained permissions for users and groups
+- **Complete Audit Trails**: Track all document activities
+- **Privacy First**: Option to use Azure OpenAI to keep models in your own tenant
+- **Self-Hosted**: All data stays on your infrastructure - no vendor lock-in
+- **Session Management**: Secure session handling with automatic expiry
+
+### Modern Architecture
+- **RESTful API**: Complete OpenAPI 3.0 documented API built with FastAPI
+- **Vector Database**: ChromaDB for lightning-fast semantic search using embeddings
+- **Flexible AI**: Choose between OpenAI or Azure OpenAI (your choice)
+- **Simple Frontend**: Vanilla JavaScript keeping it simple and fast
+- **Docker-Ready**: Deploy in minutes with included setup script
+
+## Demo
+
+### Dashboard Overview
+![Dashboard](assets/dashboard-overview.png)
+*Clean, intuitive dashboard showing document statistics and recent activities*
+
+### AI-Powered Search
+![AI Search](assets/ai-search.jpeg)
+*Find documents by meaning, not just keywords - ask questions in natural language*
+
+### AI Chat
+![AI Chat](assets/ai-chat.png)
+*Interactive AI chat for document analysis and knowledge extraction*
+
+### Document Upload & Processing
+![Document Upload](assets/document-upload.jpeg)
+*Drag-and-drop interface with automatic text extraction and AI tagging*
+
+### Smart Tags & Organization
+![Tags Management](assets/tags.png)
+*AI auto-generates correspondents, document types, and tags - fully customizable with color coding*
+
+### Document Viewer
+![Document Viewer](assets/document-viewer.png)
+*Built-in document viewer with search highlighting and annotations*
+
+### User Management
+![User Management](assets/user-management.jpeg)
+*Enterprise-grade user and permission management*
+
+### Settings & Configuration
+![Settings](assets/settings-page.jpeg)
+*Easy configuration of AI providers and system settings*
 
 ## Initial Setup
 
@@ -352,8 +354,8 @@ We love contributions! Please see our [Contributing Guide](https://github.com/Ja
 
 ```bash
 # Clone your fork
-git clone https://github.com/JayRHa/DocumentManager.git
-cd DocumentManager
+git clone https://github.com/JayRHa/document-manager.git
+cd document-manager
 
 # Create branch
 git checkout -b feature/your-feature
@@ -374,13 +376,7 @@ Built with ❤️ by Jannik Reinhard and Fabian Peschke
 ☕ If you want to support the project, you can [buy us a coffee](https://www.buymeacoffee.com/your-link)
 
 <!-- jr-brand-footer:start -->
-
 ---
 
-<div align="center">
-  <p><sub>Built and maintained by <a href="https://jannikreinhard.com/">Jannik Reinhard</a> · Microsoft MVP for Security and AI Platform.</sub></p>
-  <p><a href="https://www.buymeacoffee.com/jannikreinf">Support the open-source work</a></p>
-  <p><strong>Stay healthy, Cheers Jannik</strong></p>
-</div>
-
+[Articles and guides](https://jannikreinhard.com/) · [Repository index](https://github.com/JayRHa/.github/blob/main/REPOSITORIES.md)
 <!-- jr-brand-footer:end -->

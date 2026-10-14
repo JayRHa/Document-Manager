@@ -89,7 +89,7 @@ ENV PYTHONUNBUFFERED=1 \
 LABEL maintainer="Jannik Reinhard" \
       version="1.0.0" \
       description="AI-powered document management system" \
-      org.opencontainers.image.source="https://github.com/JayRHa/DocumentManager"
+      org.opencontainers.image.source="https://github.com/JayRHa/document-manager"
 
 # Expose application port
 EXPOSE 8000
